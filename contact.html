@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact &amp; Request a Quote — Harles Lab Equipment</title>
+  <meta name="description" content="Request a quote, book a consultation, or send an enquiry to Harles Lab Equipment in Port Harcourt, Nigeria.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.harleslabequipment.com/contact.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>tailwind.config={theme:{extend:{colors:{navy:{DEFAULT:'#102B46',500:'#102B46',600:'#0D2337'},teal:{DEFAULT:'#167D9A',500:'#167D9A',600:'#11637A'}},fontFamily:{sans:['Inter','system-ui','sans-serif']}}}}</script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <style>
+    :root{--color-navy:#102B46}
+    .container-xl{max-width:80rem;margin:0 auto;padding:0 1rem}
+    @media(min-width:640px){.container-xl{padding:0 1.5rem}}
+    @media(min-width:1024px){.container-xl{padding:0 2rem}}
+    :focus-visible{outline:2px solid #167D9A;outline-offset:2px}
+    .skip-link{position:absolute;top:-100%;left:1rem;padding:.5rem 1rem;background:#102B46;color:#fff;border-radius:6px;font-size:.875rem;font-weight:600;z-index:100}.skip-link:focus{top:1rem}
+    .mobile-nav-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.4);z-index:30;opacity:0;pointer-events:none;transition:opacity .2s}.mobile-nav-overlay.open{opacity:1;pointer-events:auto}
+    .mobile-nav-panel{position:fixed;top:0;right:0;height:100%;width:18rem;max-width:85vw;background:#fff;z-index:40;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .2s;box-shadow:0 25px 50px rgba(0,0,0,.25)}.mobile-nav-panel.open{transform:translateX(0)}
+    .back-to-top{position:fixed;bottom:1.5rem;right:1.5rem;width:2.5rem;height:2.5rem;background:#102B46;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.2);opacity:0;pointer-events:none;transition:opacity .2s;z-index:40;cursor:pointer;border:none}.back-to-top.visible{opacity:1;pointer-events:auto}
+    .nav-link-active{color:#102B46;font-weight:600}
+    .form-input{width:100%;padding:.625rem 1rem;font-size:.875rem;border:1px solid #E2E8F0;border-radius:.5rem;outline:none;transition:border-color .15s,box-shadow .15s}
+    .form-input:focus{border-color:#167D9A;box-shadow:0 0 0 3px rgba(22,125,154,0.15)}
+    .form-input.error{border-color:#B91C1C}
+    textarea.form-input{resize:vertical;min-height:7rem}
+    select.form-input{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right .75rem center;background-size:1.25rem;padding-right:2.5rem;appearance:none}
+    .field-error{font-size:.75rem;color:#B91C1C;margin-top:.25rem;display:flex;align-items:center;gap:.25rem}
+    @media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  </style>
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased">
+  <div id="site-header"></div>
+  <main id="main-content">
+
+    <!-- Page Header -->
+    <div class="bg-navy-500 text-white">
+      <div class="container-xl py-12">
+        <nav aria-label="Breadcrumb" class="mb-4">
+          <ol class="flex items-center gap-2 text-xs text-slate-400">
+            <li><a href="/index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li aria-hidden="true"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg></li>
+            <li class="text-white font-medium" aria-current="page">Contact</li>
+          </ol>
+        </nav>
+        <h1 class="text-3xl md:text-4xl font-bold text-white">Contact &amp; Request a Quote</h1>
+        <p class="mt-3 text-slate-300 max-w-2xl">
+          Send us an equipment enquiry, request a quotation, or book a consultation.
+        </p>
+      </div>
+    </div>
+
+    <div class="container-xl py-12">
+      <div class="grid lg:grid-cols-3 gap-10">
+
+        <!-- ─── MAIN FORM ─── -->
+        <div class="lg:col-span-2">
+
+          <!-- Quote form -->
+          <section id="quote" aria-labelledby="quote-heading">
+            <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-8">
+              <h2 id="quote-heading" class="text-xl font-bold text-navy-500 mb-1">Request a Quote or Send an Enquiry</h2>
+              <p class="text-sm text-slate-500 mb-6">
+                Complete the form below. We will respond with a quotation or answer to your enquiry.
+              </p>
+
+              <!-- Success message (hidden) -->
+              <div id="form-success" class="hidden mb-6 p-4 bg-green-50 border border-green-200 rounded-xl text-sm text-green-800" role="alert" aria-live="polite">
+                <div class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <div>
+                    <p class="font-semibold">Your enquiry has been submitted successfully.</p>
+                    <p class="mt-1 text-green-700">We will review your message and respond as soon as possible.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Error message (hidden) -->
+              <div id="form-error-banner" class="hidden mb-6 p-4 bg-red-50 border border-red-200 rounded-xl text-sm text-red-800" role="alert" aria-live="assertive">
+                <div class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+                  </svg>
+                  <div>
+                    <p class="font-semibold">The enquiry could not be sent.</p>
+                    <p id="form-error-detail" class="mt-1 text-red-700">Please check your connection and try again, or contact us directly.</p>
+                  </div>
+                </div>
+              </div>
+
+              <form id="enquiry-form" novalidate>
+                <div class="grid sm:grid-cols-2 gap-5">
+
+                  <!-- Name -->
+                  <div>
+                    <label for="field-name" class="block text-sm font-medium text-slate-700 mb-1.5">
+                      Full name <span class="text-red-500" aria-label="required">*</span>
+                    </label>
+                    <input type="text" id="field-name" name="name" required autocomplete="name"
+                      placeholder="Dr. Adaeze Okonkwo"
+                      class="form-input">
+                  </div>
+
+                  <!-- Organisation -->
+                  <div>
+                    <label for="field-org" class="block text-sm font-medium text-slate-700 mb-1.5">Organisation</label>
+                    <input type="text" id="field-org" name="organisation" autocomplete="organization"
+                      placeholder="Hospital or laboratory name"
+                      class="form-input">
+                  </div>
+
+                  <!-- Email -->
+                  <div>
+                    <label for="field-email" class="block text-sm font-medium text-slate-700 mb-1.5">
+                      Work email <span class="text-red-500" aria-label="required">*</span>
+                    </label>
+                    <input type="email" id="field-email" name="email" required autocomplete="email"
+                      placeholder="you@organisation.com"
+                      class="form-input">
+                  </div>
+
+                  <!-- Phone -->
+                  <div>
+                    <label for="field-phone" class="block text-sm font-medium text-slate-700 mb-1.5">Phone number <span class="text-slate-400 text-xs font-normal">(optional)</span></label>
+                    <input type="tel" id="field-phone" name="phone" autocomplete="tel"
+                      placeholder="+234 XXX XXX XXXX"
+                      class="form-input">
+                  </div>
+
+                  <!-- Enquiry type -->
+                  <div>
+                    <label for="field-type" class="block text-sm font-medium text-slate-700 mb-1.5">
+                      Enquiry type <span class="text-red-500" aria-label="required">*</span>
+                    </label>
+                    <select id="field-type" name="enquiry_type" required class="form-input">
+                      <option value="">Select enquiry type…</option>
+                      <option value="quote">Request a quotation</option>
+                      <option value="product">Product information</option>
+                      <option value="consultation">Book a consultation</option>
+                      <option value="support">Technical support</option>
+                      <option value="general">General enquiry</option>
+                    </select>
+                  </div>
+
+                  <!-- Product of interest -->
+                  <div>
+                    <label for="field-product" class="block text-sm font-medium text-slate-700 mb-1.5">Product of interest</label>
+                    <input type="text" id="field-product" name="product_of_interest"
+                      placeholder="e.g. Haematology analyser, Zybio Z5…"
+                      class="form-input">
+                  </div>
+
+                  <!-- Quantity -->
+                  <div>
+                    <label for="field-qty" class="block text-sm font-medium text-slate-700 mb-1.5">Quantity required</label>
+                    <input type="number" id="field-qty" name="quantity" min="1"
+                      placeholder="1"
+                      class="form-input">
+                  </div>
+
+                </div>
+
+                <!-- Message -->
+                <div class="mt-5">
+                  <label for="field-message" class="block text-sm font-medium text-slate-700 mb-1.5">
+                    Message or requirements <span class="text-red-500" aria-label="required">*</span>
+                  </label>
+                  <textarea id="field-message" name="message" required
+                    placeholder="Please describe your laboratory's requirements, any specific configuration needs, or questions you have…"
+                    class="form-input"
+                    rows="5"></textarea>
+                </div>
+
+                <!-- Privacy notice -->
+                <div class="mt-5 flex items-start gap-3">
+                  <input type="checkbox" id="field-consent" name="consent" required
+                    class="mt-0.5 h-4 w-4 rounded border-gray-300 text-teal-600 focus:ring-teal-400">
+                  <label for="field-consent" class="text-xs text-slate-500 leading-relaxed">
+                    I agree that Harles Lab Equipment may use the information I have provided to respond to this enquiry.
+                    <a href="/privacy.html" class="text-teal-600 hover:underline" target="_blank">Privacy Policy</a>
+                  </label>
+                </div>
+
+                <!-- Submit -->
+                <div class="mt-6">
+                  <button type="submit" id="form-submit"
+                    class="inline-flex items-center justify-center gap-2 bg-teal-500 hover:bg-teal-600 text-white font-semibold px-8 py-3 rounded-lg transition-colors disabled:opacity-60 disabled:cursor-not-allowed text-sm">
+                    Submit Enquiry
+                  </button>
+                  <p class="text-xs text-slate-400 mt-3">
+                    Fields marked <span class="text-red-500">*</span> are required. We will not share your details with third parties.
+                  </p>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <!-- Telegram Section -->
+          <section id="telegram" class="mt-8" aria-labelledby="telegram-heading">
+            <div class="bg-slate-50 rounded-2xl border border-gray-100 p-7">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-5 h-5 text-blue-500" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <h2 id="telegram-heading" class="text-base font-semibold text-navy-500 mb-2">Quick Enquiry via Telegram</h2>
+                  <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                    Prefer a faster response? Use the Telegram enquiry button on any product page to send a structured product enquiry directly to our team. You can also find product-specific enquiry options in the product catalogue.
+                  </p>
+                  <a href="/products.html"
+                     class="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors">
+                    Browse products to enquire
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- ─── SIDEBAR ─── -->
+        <aside class="space-y-6">
+
+          <!-- Consultation -->
+          <div class="bg-navy-500 rounded-2xl p-7 text-white">
+            <h2 class="text-base font-semibold mb-3">Book a Consultation</h2>
+            <p class="text-sm text-slate-300 leading-relaxed mb-5">
+              Schedule a free consultation to discuss your laboratory equipment requirements with our team.
+            </p>
+            <button id="contact-consult-btn"
+              class="w-full inline-flex items-center justify-center gap-2 bg-teal-500 hover:bg-teal-400 text-white font-semibold py-2.5 rounded-lg transition-colors text-sm">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+              </svg>
+              Book a Free Consultation
+            </button>
+          </div>
+
+          <!-- Contact Details -->
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-7">
+            <h2 class="text-base font-semibold text-navy-500 mb-5">Contact Information</h2>
+            <div class="space-y-4 text-sm" id="contact-info-display">
+              <!-- Rendered by JS from config -->
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="bg-white rounded-2xl border border-gray-100 shadow-sm p-7">
+            <h2 class="text-base font-semibold text-navy-500 mb-3">Location</h2>
+            <div class="flex items-start gap-3 text-sm text-slate-600">
+              <svg class="w-5 h-5 text-teal-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              </svg>
+              <div>
+                <p id="sidebar-address">Port Harcourt, Rivers State, Nigeria</p>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+
+  </main>
+  <div id="site-footer"></div>
+
+  <script src="/assets/js/config.js"></script>
+  <script src="/assets/js/products.js"></script>
+  <script src="/assets/js/utils.js"></script>
+  <script src="/assets/js/layout.js"></script>
+  <script src="/assets/js/contact.js"></script>
+</body>
+</html>

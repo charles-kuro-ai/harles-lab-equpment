@@ -1,0 +1,26 @@
+# ── Environment & secrets ─────────────────────────
+.env
+.env.local
+.env.production
+.env.*.local
+
+# ── Node ──────────────────────────────────────────
+node_modules/
+npm-debug.log*
+
+# ── Build outputs ─────────────────────────────────
+# The compiled CSS is committed so Vercel can serve it.
+# If you prefer to generate it in the build step, add:
+# assets/css/styles.css
+# and ensure "npm run build" runs before deployment.
+
+# ── OS & editor files ─────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# ── Vercel ────────────────────────────────────────
+.vercel/

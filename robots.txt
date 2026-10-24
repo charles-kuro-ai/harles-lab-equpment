@@ -1,0 +1,10 @@
+# robots.txt — Harles Lab Equipment
+# Update the Sitemap URL to your actual production domain before launch.
+
+User-agent: *
+Allow: /
+
+# Keep draft or admin paths out of indexing (add any if needed)
+# Disallow: /draft/
+
+Sitemap: https://www.harleslabequipment.com/sitemap.xml

@@ -1,0 +1,372 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =============================
+   BASE RESETS & CUSTOM TOKENS
+   ============================= */
+@layer base {
+  :root {
+    --color-navy: #102B46;
+    --color-teal: #167D9A;
+    --color-bg: #F4F7FA;
+    --color-white: #FFFFFF;
+    --color-text: #172B3A;
+    --color-text-muted: #64748B;
+    --color-border: #E2E8F0;
+    --color-success: #15803D;
+    --color-error: #B91C1C;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-white text-slate-800 font-sans antialiased;
+    color: var(--color-text);
+  }
+
+  *, *::before, *::after {
+    @apply box-border;
+  }
+
+  img {
+    @apply max-w-full h-auto;
+  }
+
+  a {
+    @apply transition-colors duration-150;
+  }
+
+  /* Accessible focus styles */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-teal-500;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-navy);
+    @apply font-semibold leading-tight;
+  }
+}
+
+/* =============================
+   COMPONENT LAYER
+   ============================= */
+@layer components {
+
+  /* Container */
+  .container-xl {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-semibold text-sm rounded-md
+           transition-all duration-150 focus-visible:outline-2 focus-visible:outline-offset-2
+           disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer;
+  }
+
+  .btn-primary {
+    @apply btn bg-teal-500 text-white hover:bg-teal-600 active:bg-teal-700
+           focus-visible:outline-teal-500 px-5 py-2.5 shadow-sm;
+  }
+
+  .btn-primary-lg {
+    @apply btn-primary px-7 py-3.5 text-base;
+  }
+
+  .btn-secondary {
+    @apply btn bg-white text-navy-500 border border-gray-200 hover:bg-slate-50
+           hover:border-gray-300 focus-visible:outline-navy-500 px-5 py-2.5 shadow-sm;
+  }
+
+  .btn-secondary-lg {
+    @apply btn-secondary px-7 py-3.5 text-base;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-teal-500 text-teal-600 hover:bg-teal-50
+           focus-visible:outline-teal-500 px-5 py-2.5;
+  }
+
+  .btn-ghost {
+    @apply btn text-teal-600 hover:bg-teal-50 px-4 py-2 rounded-md;
+  }
+
+  .btn-navy {
+    @apply btn bg-navy-500 text-white hover:bg-navy-600 active:bg-navy-700
+           focus-visible:outline-navy-500 px-5 py-2.5 shadow-sm;
+  }
+
+  /* Badges */
+  .badge {
+    @apply inline-flex items-center text-xs font-semibold px-2.5 py-0.5 rounded-full;
+  }
+
+  .badge-teal {
+    @apply badge bg-teal-50 text-teal-700;
+  }
+
+  .badge-navy {
+    @apply badge bg-navy-50 text-navy-600;
+  }
+
+  .badge-green {
+    @apply badge bg-green-50 text-green-700;
+  }
+
+  /* Cards */
+  .card {
+    @apply bg-white rounded-xl border border-gray-100 shadow-card overflow-hidden
+           transition-shadow duration-200;
+  }
+
+  .card:hover {
+    @apply shadow-card-hover;
+  }
+
+  /* Section headings */
+  .section-label {
+    @apply text-xs font-bold tracking-widest uppercase text-teal-600;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-navy-500 mt-2;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-slate-600 mt-4 leading-relaxed;
+  }
+
+  /* Nav link */
+  .nav-link {
+    @apply text-sm font-medium text-slate-600 hover:text-navy-500 transition-colors
+           duration-150 px-1 py-0.5;
+  }
+
+  .nav-link-active {
+    @apply text-navy-500 font-semibold;
+  }
+
+  /* Form elements */
+  .form-label {
+    @apply block text-sm font-medium text-slate-700 mb-1.5;
+  }
+
+  .form-input {
+    @apply w-full px-4 py-2.5 text-sm border border-gray-200 rounded-lg
+           focus:outline-none focus:ring-2 focus:ring-teal-400 focus:border-teal-400
+           placeholder-slate-400 bg-white transition-shadow duration-150;
+  }
+
+  .form-input-error {
+    @apply border-red-400 focus:ring-red-300 focus:border-red-400;
+  }
+
+  .form-error {
+    @apply text-xs text-red-600 mt-1 flex items-center gap-1;
+  }
+
+  .form-select {
+    @apply form-input appearance-none bg-[url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3E%3C/svg%3E")] bg-no-repeat bg-[right_0.75rem_center] bg-[length:1.25rem] pr-10;
+  }
+
+  .form-textarea {
+    @apply form-input resize-y min-h-[7rem];
+  }
+
+  /* Alert / notice */
+  .alert {
+    @apply px-4 py-3 rounded-lg text-sm flex items-start gap-3;
+  }
+
+  .alert-success {
+    @apply alert bg-green-50 text-green-800 border border-green-200;
+  }
+
+  .alert-error {
+    @apply alert bg-red-50 text-red-800 border border-red-200;
+  }
+
+  /* Product card */
+  .product-card {
+    @apply card flex flex-col cursor-default;
+  }
+
+  .product-card-image {
+    @apply aspect-[4/3] bg-slate-50 overflow-hidden flex items-center justify-center;
+  }
+
+  .product-card-body {
+    @apply p-5 flex flex-col flex-1 gap-3;
+  }
+
+  /* FAQ accordion */
+  .faq-item {
+    @apply border-b border-gray-100 last:border-0;
+  }
+
+  .faq-trigger {
+    @apply w-full flex items-center justify-between gap-4 text-left py-5 text-sm font-semibold
+           text-navy-500 hover:text-teal-600 transition-colors duration-150 cursor-pointer;
+  }
+
+  .faq-answer {
+    @apply text-sm text-slate-600 leading-relaxed pb-5 hidden;
+  }
+
+  .faq-answer.open {
+    @apply block;
+  }
+
+  .faq-icon {
+    @apply w-5 h-5 text-teal-500 flex-shrink-0 transition-transform duration-200;
+  }
+
+  .faq-icon.open {
+    @apply rotate-45;
+  }
+
+  /* Steps */
+  .step-number {
+    @apply w-10 h-10 rounded-full bg-teal-500 text-white text-sm font-bold
+           flex items-center justify-center flex-shrink-0;
+  }
+
+  /* Stat card */
+  .stat-value {
+    @apply text-3xl font-bold text-navy-500;
+  }
+
+  .stat-label {
+    @apply text-sm text-slate-500 mt-1;
+  }
+
+  /* Loading spinner */
+  .spinner {
+    @apply inline-block w-4 h-4 border-2 border-current border-t-transparent rounded-full;
+    animation: spin 0.75s linear infinite;
+  }
+
+  /* Back to top */
+  .back-to-top {
+    @apply fixed bottom-6 right-6 w-10 h-10 bg-navy-500 text-white rounded-full
+           flex items-center justify-center shadow-lg opacity-0 pointer-events-none
+           transition-opacity duration-200 z-40 hover:bg-navy-600;
+  }
+
+  .back-to-top.visible {
+    @apply opacity-100 pointer-events-auto;
+  }
+}
+
+/* =============================
+   UTILITIES
+   ============================= */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-navy {
+    background: linear-gradient(135deg, #102B46 0%, #1a4a6e 100%);
+  }
+
+  .gradient-teal-light {
+    background: linear-gradient(135deg, #E6F4F8 0%, #BFE3EC 100%);
+  }
+}
+
+/* =============================
+   ANIMATIONS
+   ============================= */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.4s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-up,
+  .spinner,
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* =============================
+   MOBILE NAV OVERLAY
+   ============================= */
+.mobile-nav-overlay {
+  @apply fixed inset-0 bg-black/40 z-30 opacity-0 pointer-events-none transition-opacity duration-200;
+}
+
+.mobile-nav-overlay.open {
+  @apply opacity-100 pointer-events-auto;
+}
+
+.mobile-nav-panel {
+  @apply fixed top-0 right-0 h-full w-72 max-w-[85vw] bg-white z-40 shadow-2xl
+         flex flex-col transform translate-x-full transition-transform duration-200;
+}
+
+.mobile-nav-panel.open {
+  @apply translate-x-0;
+}
+
+/* =============================
+   PRODUCT FILTER CHIPS
+   ============================= */
+.filter-chip {
+  @apply inline-flex items-center px-4 py-1.5 rounded-full text-sm font-medium border
+         transition-colors duration-150 cursor-pointer;
+}
+
+.filter-chip-default {
+  @apply filter-chip border-gray-200 text-slate-600 bg-white hover:bg-slate-50 hover:border-gray-300;
+}
+
+.filter-chip-active {
+  @apply filter-chip border-teal-500 text-teal-700 bg-teal-50;
+}
+
+/* =============================
+   HERO PATTERN
+   ============================= */
+.hero-bg {
+  background-color: var(--color-navy);
+  background-image:
+    radial-gradient(circle at 20% 60%, rgba(22, 125, 154, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(22, 125, 154, 0.10) 0%, transparent 40%);
+}
+
+/* =============================
+   SECTION DIVIDER
+   ============================= */
+.section-divider {
+  @apply border-0 border-t border-gray-100 my-0;
+}
+
+/* =============================
+   SKIP LINK (ACCESSIBILITY)
+   ============================= */
+.skip-link {
+  @apply sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-50
+         focus:px-4 focus:py-2 focus:bg-navy-500 focus:text-white focus:rounded-md
+         focus:text-sm focus:font-semibold;
+}
