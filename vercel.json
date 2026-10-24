@@ -4,8 +4,7 @@
   "outputDirectory": ".",
   "functions": {
     "api/telegram-enquiry.js": {
-      "runtime": "nodejs18.x",
-      "maxDuration": 15
+     
     }
   },
   "routes": [
