@@ -22,10 +22,10 @@ const SITE_CONFIG = {
 
   // ─── Contact Details [REQUIRED — enter real values] ──
   // Replace null values with actual verified contact information.
-  email: null,           // e.g. 'info@harleslabequipment.com'
-  phone: null,           // e.g. '+234 XXX XXX XXXX'
-  whatsapp: null,        // e.g. '+234XXXXXXXXXX' (digits only, no spaces)
-  address: null,         // e.g. '123 Ada George Road, Port Harcourt, Rivers State'
+  email: 'kurotam28@gmail.com',           // e.g. 'info@harleslabequipment.com'
+  phone: '09027736373',           // e.g. '+234 XXX XXX XXXX'
+  whatsapp: '+2349027736373',        // e.g. '+234XXXXXXXXXX' (digits only, no spaces)
+  address: 'No. 27 Ikwerre Rd, Port Harcourt, Rivers State',         // e.g. '123 Ada George Road, Port Harcourt, Rivers State'
 
   // ─── Social Media [OPTIONAL] ─────────────────────────
   // Only include verified, active accounts.
@@ -40,13 +40,14 @@ const SITE_CONFIG = {
   // 1. Go to https://formspree.io and create a free account.
   // 2. Create a new form and copy the endpoint URL.
   // 3. Paste it below (it looks like https://formspree.io/f/XXXXXXXX).
-  formspreeEndpoint: null, // e.g. 'https://formspree.io/f/xpwdabcd'
+  formspreeEndpoint: 'https://formspree.io/f/xbggdjva'
+, // e.g. 'https://formspree.io/f/xpwdabcd'
 
   // ─── Calendly [REQUIRED for consultation booking] ────
   // 1. Create a Calendly account at https://calendly.com.
   // 2. Set up an event type for laboratory equipment consultations.
   // 3. Copy your scheduling link and paste it below.
-  calendlyUrl: null,    // e.g. 'https://calendly.com/harleslab/consultation'
+  calendlyUrl: 'https://calendly.com/kurotam28/lab-equipment-consultation',    // e.g. 'https://calendly.com/harleslab/consultation'
 
   // ─── Telegram Enquiry API [REQUIRED for Telegram feature] ─
   // The bot token and chat ID are stored server-side in Vercel.

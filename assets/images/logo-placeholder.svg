@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 60" fill="none">
-  <rect width="240" height="60" fill="none"/>
-  <rect x="0" y="8" width="44" height="44" rx="8" fill="#102B46"/>
-  <text x="22" y="35" text-anchor="middle" font-family="system-ui,sans-serif" font-size="22" font-weight="700" fill="#167D9A">H</text>
-  <text x="56" y="28" font-family="system-ui,sans-serif" font-size="16" font-weight="700" fill="#102B46">HARLES</text>
-  <text x="56" y="46" font-family="system-ui,sans-serif" font-size="10" font-weight="500" fill="#64748B" letter-spacing="2">LAB EQUIPMENT</text>
-</svg>
